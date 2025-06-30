@@ -8,8 +8,8 @@ import java.time.LocalDate;
 
 @Data
 public class PrenotazioneDTO {
-    @NotEmpty(message = "La destinazione dev'essere obbligatoria")
-    private String dipendenteId;
+    @NotNull(message = "La destinazione dev'essere obbligatoria")
+    private Long dipendenteId;
     @NotNull(message = "l'id deve esserci")
     private Long viaggioId;
     @NotNull(message = "la data deve essere obbligatoria")
