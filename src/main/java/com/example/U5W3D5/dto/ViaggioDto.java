@@ -7,7 +7,7 @@ import lombok.Data;
 import java.time.LocalDate;
 
 @Data
-public class ViaggioDto {
+public class ViaggioDTO {
     @NotEmpty(message = "La destinazione dev'essere scelta")
     private String destinazione;
     @NotNull(message = "La data dev'essere obbligatoria")
