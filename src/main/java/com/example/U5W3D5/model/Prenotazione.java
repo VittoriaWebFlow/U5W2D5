@@ -1,12 +1,14 @@
 package com.example.U5W3D5.model;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
+import lombok.Data;
 
 import java.time.LocalDate;
 
+
+@Data
+@Entity
+@Table(name = "prenotazioni")
 public class Prenotazione {
 
     @Id
